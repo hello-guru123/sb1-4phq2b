@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #ff6b00;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#ff6b00] text-white px-6 py-3 rounded-lg font-semibold 
+           hover:bg-[#e65d00] transition-colors duration-200 inline-block;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-lg {
+    @apply text-4xl sm:text-5xl font-bold text-gray-900;
+  }
+
+  .heading-md {
+    @apply text-3xl font-bold text-gray-900;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-200;
+  }
+}
+
+.hero-video-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
